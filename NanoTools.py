@@ -8,7 +8,7 @@ import numpy as np  # Perlu import numpy untuk grafik dummy
 # KONFIGURASI HALAMAN
 # =============================
 st.set_page_config(
-    page_title="NanoTools",
+    page_title="NanoToolsssss",
     page_icon="🧬",
     layout="centered",
     initial_sidebar_state="expanded"

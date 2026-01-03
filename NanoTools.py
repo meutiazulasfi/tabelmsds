@@ -198,7 +198,7 @@ elif menu == "🤖 Ask Copilot":
         st.write(f"Menjawab pertanyaan: {prompt}")
 
 # =========================================================
-# HALAMAN 4: ABOUT (TIM PENULIS - 4 KOLOM DALAM 1 BARIS)
+# HALAMAN 4: ABOUT (TIM PENULIS - 4 KOLOM DALAM 1 BARIS) 
 # =========================================================
 elif menu == "👥 About (Tim Penulis)":
     st.markdown("## 👥 Tim Pengembang NanoTools")
@@ -207,12 +207,12 @@ elif menu == "👥 About (Tim Penulis)":
     make_card_start()
     st.markdown("<div class='card-header'>Visi Kami</div>", unsafe_allow_html=True)
     st.write("""
-    Website ini dikembangkan oleh kolaborasi tim mahasiswa untuk mendigitalisasi 
-    perhitungan laboratorium dan akses literatur nanoteknologi secara terpadu.
+    Website ini dikembangkan oleh mahasiswa prodi Nanoteknologi Pangan untuk mendigitalisasi 
+    perhitungan laboratorium dan mempermudah akses literatur nanoteknologi.
     """)
     make_card_end()
 
-    st.markdown("### 🎓 Anggota Tim")
+    st.markdown("### Anggota Tim")
     st.write("") # Spacer
 
     # Membuat 4 kolom dalam 1 baris
@@ -222,44 +222,46 @@ elif menu == "👥 About (Tim Penulis)":
     with col1:
         make_card_start()
         st.image("https://cdn-icons-png.flaticon.com/512/4140/4140048.png", use_container_width=True)
-        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Fairuz Zuhria</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Fairuz Zuhria Chayara Alima</p>", unsafe_allow_html=True)
         st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Penulis</span></center>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 123456781</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 2450156</p>", unsafe_allow_html=True)
         make_card_end()
 
     # PENULIS 2
     with col2:
         make_card_start()
         st.image("https://cdn-icons-png.flaticon.com/512/4140/4140047.png", use_container_width=True)
-        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Nama Penulis 2</p>", unsafe_allow_html=True)
-        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Peneliti</span></center>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 123456782</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Intan Nurul Hasanah</p>", unsafe_allow_html=True)
+        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Penulis</span></center>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 2450167</p>", unsafe_allow_html=True)
         make_card_end()
 
     # PENULIS 3
     with col3:
         make_card_start()
         st.image("https://cdn-icons-png.flaticon.com/512/4140/4140037.png", use_container_width=True)
-        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Nama Penulis 3</p>", unsafe_allow_html=True)
-        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Desainer</span></center>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 123456783</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Meuthia Zulashfi Rhohyan Syafrudin</p>", unsafe_allow_html=True)
+        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Penulis</span></center>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 2450180</p>", unsafe_allow_html=True)
         make_card_end()
 
     # PENULIS 4
     with col4:
         make_card_start()
         st.image("https://cdn-icons-png.flaticon.com/512/4140/4140051.png", use_container_width=True)
-        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Nama Penulis 4</p>", unsafe_allow_html=True)
-        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Penguji</span></center>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 123456784</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-weight: bold; margin-bottom: 0;'>Nicholas Dimas Ananda</p>", unsafe_allow_html=True)
+        st.markdown("<center><span class='role-badge' style='font-size: 0.6rem;'>Penulis</span></center>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; font-size: 0.7rem; color: #666;'>NIM: 2450197</p>", unsafe_allow_html=True)
         make_card_end()
 
     # --- Info Instansi ---
     st.markdown("---")
     st.markdown("<h4 style='text-align: center; color: white;'>Politeknik AKA Bogor</h4>", unsafe_allow_html=True)
 
+
 # =============================
 # FOOTER
 # =============================
-st.markdown("---")
-st.markdown("<p style='text-align: center; color: white;'>Developed with ❤️ using NanoTools 2025</p>", unsafe_allow_html=True)
+st.markdown("<br><br>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: white; font-size: 0.8rem;'>Hak Cipta © 2025 NanoTools. All Rights Reserved.</p>", unsafe_allow_html=True)
+

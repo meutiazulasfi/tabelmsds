@@ -94,10 +94,9 @@ with st.sidebar:
     menu = st.radio(
         "Pilih Modul:",
         [
+            "📈 Insight",
             "🔬 Lab Nanoteknologi", 
-            "🛠 Tools", 
-            "📈 Insight", 
-            "📚 Learning",
+            "🛠 Tools",  
             "👤 About"
         ]
     )
@@ -109,7 +108,16 @@ with st.sidebar:
 # LOGIKA HALAMAN (IF - ELIF)
 # =============================
 
-# 1. MODUL NANOTEKNOLOGI
+# 1. MENU INSIGHT
+elif menu == "📈 Insight":
+    st.title("🔬 Nanoparticle Insight")
+    st.write("Data tren penelitian nanoteknologi terkini.")
+    # Contoh grafik dummy
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['A', 'B', 'C'])
+    st.line_chart(chart_data)
+
+
+# 2. MODUL NANOTEKNOLOGI
 if menu == "🔬 Lab Nanoteknologi":
     st.markdown("## 🧪 Perhitungan Laboratorium")
     
@@ -126,35 +134,8 @@ if menu == "🔬 Lab Nanoteknologi":
         st.success(f"Massa: **{molaritas * volume_l * mr:.4f} gram**")
     make_card_end()
 
-# 2. MODUL GIZI & PANGAN
-elif menu == "🍽 Gizi & Pangan":
-    st.markdown("## 🥗 Manajemen Diet & Nutrisi")
-    make_card_start()
-    st.markdown("<div class='card-header'>🔥 Kalkulator TDEE</div>", unsafe_allow_html=True)
-    st.write("Fitur perhitungan kalori harian.")
-    # (Kode kalkulator disederhanakan agar tidak terlalu panjang, logika tetap sama)
-    bb = st.number_input("Berat Badan (kg)", 60.0)
-    tb = st.number_input("Tinggi Badan (cm)", 165.0)
-    if st.button("Hitung BMR Sederhana"):
-        bmr = 10 * bb + 6.25 * tb - 5 * 25 + 5
-        st.success(f"Estimasi BMR: {bmr:.0f} kkal")
-    make_card_end()
 
-# 3. MODUL FOOD ENGINEERING
-elif menu == "🏭 Food Engineering":
-    st.markdown("## 🏭 Rekayasa Pangan")
-    make_card_start()
-    st.markdown("<div class='card-header'>📅 Prediksi Umur Simpan (Q10)</div>", unsafe_allow_html=True)
-    st.write("Simulasi percepatan kerusakan pangan akibat suhu.")
-    make_card_end()
-
-# ==========================================
-# PERBAIKAN 2: Menggunakan variabel 'menu' 
-# dan string biasa, bukan 'selected_menu' 
-# atau 't["..."]' yang error.
-# ==========================================
-
-# 4. MENU TOOLS
+# 3. MENU TOOLS
 elif menu == "🛠 Tools":
     st.title("🛠 Extra Tools")
     tab1, tab2 = st.tabs(["🧬 Nano Tools", "🍽️ Food Tools"])
@@ -166,36 +147,6 @@ elif menu == "🛠 Tools":
         make_card_start()
         st.write("Konverter unit pangan akan muncul di sini.")
         make_card_end()
-
-# 5. MENU INSIGHT
-elif menu == "📈 Insight":
-    st.title("🔬 Nanoparticle Insight")
-    st.write("Data tren penelitian nanoteknologi terkini.")
-    # Contoh grafik dummy
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['A', 'B', 'C'])
-    st.line_chart(chart_data)
-
-# 6. MENU LEARNING
-elif menu == "📚 Learning":
-    st.title("📚 Pusat Belajar")
-    tabs = st.tabs(["⚗️ Kimia Dasar", "🌿 Organik", "💎 Anorganik"])
-    
-    with tabs[0]:
-        make_card_start()
-        st.markdown("### Stoikiometri\nIlmu yang mempelajari hubungan kuantitatif zat.")
-        make_card_end()
-    with tabs[1]:
-        make_card_start()
-        st.markdown("### Gugus Fungsi\nAlkohol, Aldehid, Keton, dll.")
-        make_card_end()
-
-# 7. MENU COPILOT
-elif menu == "🤖 Ask Copilot":
-    st.title("🤖 AI Research Assistant")
-    st.info("Fitur Chatbot AI sedang dalam pengembangan.")
-    prompt = st.text_input("Tanya sesuatu tentang Food Tech...")
-    if prompt:
-        st.write(f"Menjawab pertanyaan: {prompt}")
 
 # =========================================================
 # HALAMAN 4: ABOUT (TIM PENULIS - 4 KOLOM DALAM 1 BARIS) 

@@ -1,4 +1,3 @@
-
 import streamlit as st
 import math
 import pandas as pd # Perlu import pandas untuk grafik dummy
@@ -109,7 +108,6 @@ with st.sidebar:
 # =============================
 
 # 1. MENU INSIGHT
-
 if menu == "📈 Insight":
     st.title("🔬 Nanoparticle Insight")
     st.write("Data tren penelitian nanoteknologi terkini.")

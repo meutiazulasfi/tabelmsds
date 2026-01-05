@@ -110,7 +110,7 @@ with st.sidebar:
 
 # 1. MENU INSIGHT
 
-elif menu == "📈 Insight":
+if menu == "📈 Insight":
     st.title("🔬 Nanoparticle Insight")
     st.write("Data tren penelitian nanoteknologi terkini.")
     # Contoh grafik dummy
@@ -119,7 +119,7 @@ elif menu == "📈 Insight":
 
 
 # 2. MODUL NANOTEKNOLOGI
-if menu == "🔬 Lab Nanoteknologi":
+elif menu == "🔬 Lab Nanoteknologi":
     st.markdown("## 🧪 Perhitungan Laboratorium")
     
     # Kalkulator Molaritas

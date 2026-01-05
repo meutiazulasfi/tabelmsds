@@ -109,6 +109,7 @@ with st.sidebar:
 # =============================
 
 # 1. MENU INSIGHT
+
 elif menu == "📈 Insight":
     st.title("🔬 Nanoparticle Insight")
     st.write("Data tren penelitian nanoteknologi terkini.")
